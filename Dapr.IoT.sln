@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.IoT.Common", "Dapr.IoT.Common\Dapr.IoT.Common.csproj", "{89AA71B1-5C25-4004-B764-437941C3C45D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.Iot.Devices.Temperature", "Dapr.Iot.Devices.Temperature\Dapr.Iot.Devices.Temperature.csproj", "{EEB69877-ADAC-487C-BACC-871C8E243175}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.Iot.Devices.Humidity", "Dapr.Iot.Devices.Umidity\Dapr.Iot.Devices.Humidity.csproj", "{F3722B48-DC8D-4DC3-9C51-AB8A972BE952}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.IoT.Broker", "DaprMqtt.Broker\Dapr.IoT.Broker.csproj", "{C3E2CA9D-E0B3-4358-BD14-7B601849F62E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.IoT.Subscribers.Temperature", "Dapr.IoT.Subscribers.Temperature\Dapr.IoT.Subscribers.Temperature.csproj", "{6D449F82-544C-46DB-9C1C-3739A9CDB3C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.IoT.GeoLocation", "Dapr.IoT.GeoLocation\Dapr.IoT.GeoLocation.csproj", "{A8F348B4-504A-4CB5-A4F9-CB9E254D7679}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dapr.IoT.Subscribers.Humidity", "Dapr.IoT.Subscribers.Humidity\Dapr.IoT.Subscribers.Humidity.csproj", "{27168FA0-BBBB-4582-B2AB-5A102C1D6AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89AA71B1-5C25-4004-B764-437941C3C45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AA71B1-5C25-4004-B764-437941C3C45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AA71B1-5C25-4004-B764-437941C3C45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AA71B1-5C25-4004-B764-437941C3C45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB69877-ADAC-487C-BACC-871C8E243175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB69877-ADAC-487C-BACC-871C8E243175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB69877-ADAC-487C-BACC-871C8E243175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB69877-ADAC-487C-BACC-871C8E243175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3722B48-DC8D-4DC3-9C51-AB8A972BE952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3722B48-DC8D-4DC3-9C51-AB8A972BE952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3722B48-DC8D-4DC3-9C51-AB8A972BE952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3722B48-DC8D-4DC3-9C51-AB8A972BE952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E2CA9D-E0B3-4358-BD14-7B601849F62E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E2CA9D-E0B3-4358-BD14-7B601849F62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E2CA9D-E0B3-4358-BD14-7B601849F62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E2CA9D-E0B3-4358-BD14-7B601849F62E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D449F82-544C-46DB-9C1C-3739A9CDB3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D449F82-544C-46DB-9C1C-3739A9CDB3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D449F82-544C-46DB-9C1C-3739A9CDB3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D449F82-544C-46DB-9C1C-3739A9CDB3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F348B4-504A-4CB5-A4F9-CB9E254D7679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F348B4-504A-4CB5-A4F9-CB9E254D7679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F348B4-504A-4CB5-A4F9-CB9E254D7679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F348B4-504A-4CB5-A4F9-CB9E254D7679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27168FA0-BBBB-4582-B2AB-5A102C1D6AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27168FA0-BBBB-4582-B2AB-5A102C1D6AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27168FA0-BBBB-4582-B2AB-5A102C1D6AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27168FA0-BBBB-4582-B2AB-5A102C1D6AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {289F746C-FE9A-4CB0-88B7-E5F3A848EEE5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: mqtt_state
+  namespace: default
+spec:
+  type: pubsub.mqtt
+  metadata:
+  - name: consumerID
+    value: "{uuid}"
+  - name: url
+    value: mqtt://localhost:707
