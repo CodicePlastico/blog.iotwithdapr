@@ -55,9 +55,9 @@ public class HumidityController : ControllerBase
     public async Task<ActionResult<DeviceEvent>> Get([FromRoute] string id, [FromServices] DaprClient daprClient)
     {
         logger.LogInformation($"Get state of humidity device with {id}.");
-        var state = await daprClient.GetStateEntryAsync<DeviceEvent>(StateStoreName, id);
+        var state = await daprClient.GetStateEntryAsync<HumidityModel>(StateStoreName, id);
         return state.Value is null
             ? NotFound()
-            : Ok(state);
+            : Ok(state.Value);
     }
 }
