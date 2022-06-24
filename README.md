@@ -31,7 +31,7 @@ contengono le cartelle `Components` con la configurazione
 - Recupero stato humidity 
   `curl http://localhost:5011/v1.0/invoke/dapr-iot-humidity/method/humidity/device/8b8f4142-ac68-4478-bf1c-0ddfd95a5641`
   che in teoria non ci serve, perchè possiamo usare la get-by-id built-in => 
-  `curl curl http://localhost:5011/v1.0/state/mongo_state/8b8f4142-ac68-4478-bf1c-0ddfd95a5641`
+  `curl http://localhost:5011/v1.0/state/mongo_state/8b8f4142-ac68-4478-bf1c-0ddfd95a5641`
 - Recupero stato temperature 
   `curl http://localhost:5010/v1.0/invoke/dapr-iot-temperature/method/temperature/device/8b8f4142-ac68-4478-bf1c-0ddfd95a5641`
   che in teoria non ci serve, perchè possiamo usare la get-by-id built-in =>  
