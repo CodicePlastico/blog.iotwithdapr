@@ -21,7 +21,7 @@ public class GeoLocationController : ControllerBase
     {
         var key = $"{latitude}|{longitude}";
         var locationEntry = await daprClient.GetStateEntryAsync<string>(Cache, key);
-        if (locationEntry is null || locationEntry.Value is null)
+        if (locationEntry?.Value is null)
         {
             logger.LogInformation($"The key for {latitude} and {longitude} is missing: location should be retrieved!");
 

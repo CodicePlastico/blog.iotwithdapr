@@ -12,7 +12,7 @@ namespace Dapr.Iot.Devices.Temperature;
 
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
@@ -39,7 +39,7 @@ class Program
             Log.Logger.Information("Message recieved: {payload}", a.ApplicationMessage);
         });
 
-        _mqttClient.StartAsync(options).GetAwaiter().GetResult();
+        await _mqttClient.StartAsync(options);
 
         Random rand = new Random(10);
 
@@ -52,7 +52,7 @@ class Program
                     Value: rand.Next(0, 1000) * 0.042,
                     Coordinates: new DeviceCoordinates(Latitude: Math.Round(45.647890 + Random.Shared.Next(0, 9) * 0.000001, 4), Longitude: Math.Round(10.264870 + Random.Shared.Next(0, 9) * 0.000001, 4))
                 ));
-            _mqttClient.PublishAsync(nameof(Topics.temperature), fromTemperatureSensor);
+            await _mqttClient.PublishAsync(nameof(Topics.temperature), fromTemperatureSensor);
 
             Task.Delay(1000).GetAwaiter().GetResult();
         }

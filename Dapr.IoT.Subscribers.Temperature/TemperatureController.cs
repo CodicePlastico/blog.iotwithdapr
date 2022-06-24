@@ -44,14 +44,14 @@ public class TemperatureController : ControllerBase
         }
         await state.SaveAsync();
 
-        logger.LogInformation($"State of temperature device {deviceEvent.Id} updated!");
+        logger.LogInformation("State of temperature device {deviceEventId} updated!", deviceEvent.Id);
         return new OkResult();
     }
 
     [HttpGet("temperature/device/{id}")]
     public async Task<ActionResult<DeviceEvent>> Get([FromRoute]string id, [FromServices] DaprClient daprClient)
     {
-        logger.LogInformation($"Get state of temperature device with {id}.");
+        logger.LogInformation("Get state of temperature device with {id}.", id);
         var state = await daprClient.GetStateEntryAsync<TemperatureModel>(StateStoreName, id);
         return state.Value is null 
             ? NotFound()

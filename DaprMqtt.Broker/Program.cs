@@ -10,7 +10,7 @@ class Program
 {
     private static int MessageCounter = 0;
 
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Debug()
@@ -27,7 +27,7 @@ class Program
 
         IMqttServer mqttServer = new MqttFactory().CreateMqttServer();
 
-        mqttServer.StartAsync(options.Build()).GetAwaiter().GetResult();
+        await mqttServer.StartAsync(options.Build());
         Console.ReadLine();
     }
 
